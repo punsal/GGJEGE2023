@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2792912704810944115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.01, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7774373005998457539}
@@ -56,7 +56,6 @@ GameObject:
   - component: {fileID: 2792912705796934211}
   - component: {fileID: 2792912705796934214}
   - component: {fileID: 2792912705796934213}
-  - component: {fileID: 2792912705796934212}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -72,8 +71,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2792912705796934210}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.01, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.2, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7774373005296072891}
@@ -129,19 +128,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2792912705796934212
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2792912705796934210}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7774373004109252027
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +326,7 @@ GameObject:
   - component: {fileID: 2792912704739865523}
   - component: {fileID: 2792912704739865522}
   - component: {fileID: 2792912704739865521}
+  - component: {fileID: 1692449128}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -398,6 +385,7 @@ MonoBehaviour:
   attackRange: 1
   moveSpeed: 5
   stopDistance: 1.5
+  navMeshAgent: {fileID: 1692449128}
 --- !u!114 &2792912704739865522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -431,6 +419,28 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   attackPoint: {fileID: 2792912705796934211}
+--- !u!195 &1692449128
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774373004261051451}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 2
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &7774373005221493407
 GameObject:
   m_ObjectHideFlags: 0
