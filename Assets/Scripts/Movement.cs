@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
     public float gravity = -9.81f;
     public float dashSpeed = 200f;
     public float dashDuration = 0.2f;
-    public float mouseSensitivity = 10000f;
+    public float mouseSensitivity = 100f;
 
     private Vector3 velocity;
     private bool isGrounded;

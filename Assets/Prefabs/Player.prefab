@@ -679,12 +679,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 6238802884784261509}
-  cam: {fileID: 0}
   speed: 6
   jumpHeight: 3
   gravity: -9.81
   dashSpeed: 200
   dashDuration: 0.2
+  mouseSensitivity: 200
 --- !u!114 &6559864823439387358
 MonoBehaviour:
   m_ObjectHideFlags: 0

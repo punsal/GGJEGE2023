@@ -33,7 +33,7 @@ public class SwordAttack : MonoBehaviour
         // Deal damage to enemies
         foreach (Collider enemy in hitEnemies)
         {
-            enemy.GetComponent<EnemyHealth>().TakeDamage(attackDamage);
+            enemy.GetComponentInParent<EnemyHealth>().TakeDamage(attackDamage);
         }
     }
 

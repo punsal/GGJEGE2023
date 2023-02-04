@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2792912704810944116}
   - component: {fileID: 2792912704810944117}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sword Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 2792912705796934211}
   - component: {fileID: 2792912705796934214}
   - component: {fileID: 2792912705796934213}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7774373004109252028}
   - component: {fileID: 7774373004109252029}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7774373004216346597}
   - component: {fileID: 7774373004216346598}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Example-VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,14 +322,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7774373004261051452}
-  - component: {fileID: 7774373004261051453}
   - component: {fileID: 2792912704739865523}
   - component: {fileID: 2792912704739865522}
   - component: {fileID: 2792912704739865521}
   - component: {fileID: 1692449128}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -353,22 +352,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &7774373004261051453
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7774373004261051451}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 4
-  m_CollisionDetection: 0
 --- !u!114 &2792912704739865523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,7 +435,7 @@ GameObject:
   - component: {fileID: 7774373005221493376}
   - component: {fileID: 7774373005221493378}
   - component: {fileID: 7774373005221493377}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7774373005296072891}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -567,7 +550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7774373005322101572}
   - component: {fileID: 7774373005322101573}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Example-Audio Source
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -694,7 +677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7774373005500152369}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -726,7 +709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7774373005832963506}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -758,7 +741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7774373005998457539}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Physics
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,14 +9,12 @@ public class Enemy : MonoBehaviour
     public float stopDistance = 1.5f;
 
     private Transform player;
-    private Rigidbody enemyRigidbody;
 
     [SerializeField] private NavMeshAgent navMeshAgent;
 
     void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
-        enemyRigidbody = GetComponent<Rigidbody>();
         StopChase();
     }
 
