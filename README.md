@@ -14,3 +14,11 @@ Explain the design framework of intendent game.
   - he regenerates his health.
 ### What is the main purpose of the player?
 Mike needs to stop **Daniel**. **Daniel** wants to harvest *Devil's Fruit* from *Root of All Evil*. 
+## Development
+### Changelog
+- We will use multi-scene hierarchy for development
+  - To start the game, open **LoadingScene** then *Run* Unity.
+  - Use **TestScene** for development. Do not commit TestScene changes. 
+- GameObject-Template prefab is added to project. Each element of template will have a controller and manager.
+- UIElement-Template is added to project. Please create new UIElements.
+- Project's Assets hierarchy is updated.
