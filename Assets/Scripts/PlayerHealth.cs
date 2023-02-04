@@ -12,7 +12,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Debug.Log("asdasdas");
         currentHealth -= damage;
 
         // Play the damage animation

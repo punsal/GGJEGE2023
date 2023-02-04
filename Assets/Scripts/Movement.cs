@@ -3,17 +3,22 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     public CharacterController controller;
-    public Transform cam;
 
     public float speed = 6f;
     public float jumpHeight = 3f;
     public float gravity = -9.81f;
     public float dashSpeed = 200f;
     public float dashDuration = 0.2f;
+    public float mouseSensitivity = 10000f;
 
     private Vector3 velocity;
     private bool isGrounded;
     private float dashTime;
+
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     void Update()
     {
@@ -26,11 +31,11 @@ public class Movement : MonoBehaviour
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        
+        transform.rotation *= Quaternion.Euler(0f, mouseX, 0f);
         Vector3 move = transform.right * x + transform.forward * z;
         move = Vector3.ProjectOnPlane(move, Vector3.up);
-
-        move = cam.transform.TransformDirection(move);
         move.y = 0f;
 
         if (Input.GetButtonDown("Fire3"))
@@ -57,5 +62,7 @@ public class Movement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        
     }
 }

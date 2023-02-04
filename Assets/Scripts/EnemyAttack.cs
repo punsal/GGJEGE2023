@@ -36,9 +36,7 @@ public class EnemyAttack : MonoBehaviour
 
         // Deal damage to player
         foreach (Collider player in hitPlayers)
-        {
-            Debug.Log("attack");
-            
+        {            
             player.GetComponentInParent<PlayerHealth>().TakeDamage(attackDamage);
         }
     }
